@@ -49,7 +49,6 @@ function generateProductHTML(data) {
                     <button class="btn btn-success mb-2 " onclick="addToCart(${product.id})">Agregar<br>al Carrito</button>
                 </div>
             `;
-
             // Adjuntar la tarjeta del producto a la fila
             productRow.appendChild(productCard);
         });
