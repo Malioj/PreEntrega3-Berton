@@ -1,156 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo/estilo.css">
-    <title>Catalogo</title>
+    <title>Catálogo</title>
 </head>
 
 <body>
+    <div class="container text-white text-center mt-2" id="product-container">
+        <!-- Aquí se generarán dinámicamente las tarjetas de productos -->
+    </div>
+    
+    <!-- Botón del Carrito de Compras -->
+    <button class="btn btn-primary btn-lg fixed-top" onclick="toggleCart()">Ver Carrito</button>
 
-    <body>
-        <!-- Page Content -->
-        <div class="container text-white text-center">
-            <!-- Product Cards -->
-            <div class="row">
-                <!-- TITULO SEPARACION CONFORT ANIMAL-->
-                <div class="text-center fs-2 pt-4 ">
-                    <h2>Confort Animal</h2>
-                </div>
-                <div class="pb-2">
-                    <h2 class="border border-1 rounded"></h2>
-                </div>
-                <!-- <T/>-->
-                <div class="col-xl-3 col-md-6">
-                    <div class="product-card">
-                        <img src="multimedia/catalogo1.png" class="img-fluid product-image" alt="Producto 1">
-                        <div class="product-details">
-                            <h5 class="card-title">Cepillo Rotativo</h5>
-                            <a href="#" class="btn btn-primary mt-2">INFO</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="product-card">
-                        <img src="multimedia/piso-goma.jpg" class="img-fluid product-image" alt="Producto 2">
-                        <div class="product-details">
-                            <h5 class="card-title">Piso de Goma</h5>
-                            <a href="#" class="btn btn-primary mt-2">INFO</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="product-card">
-                        <img src="multimedia/optimizar/VENTILADOR.svg" class="img-fluid product-image" alt="Producto 3">
-                        <div class="product-details">
-                            <h5 class="card-title">Ventilador</h5>
-                            <a href="#" class="btn btn-primary mt-2">INFO</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="product-card">
-                        <img src="multimedia/optimizar/CAPA-TERNERO.svg" class="img-fluid product-image"
-                            alt="Producto 4">
-                        <div class="product-details">
-                            <h5 class="card-title">Capa para Ternero</h5>
-                            <a href="#" class="btn btn-primary mt-2">INFO</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- TITULO SEPARACION HIGIENE -->
-                <div class="text-center fs-2 pt-4 ">
-                    <h2>Higiene</h2>
-                </div>
-                <div class="pb-2">
-                    <h2 class="border border-1 rounded"></h2>
-                </div>
-                <!-- <T/>-->
-                <div class="col-xl-3 col-md-6">
-                    <div class="product-card">
-                        <img src="multimedia/optimizar/ALCALINO.svg" class="img-fluid product-image" alt="Producto 5">
-                        <div class="product-details">
-                            <h5 class="card-title">Alcalino</h5>
-                            <a href="#" class="btn btn-primary mt-2">INFO</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="product-card">
-                        <img src="multimedia/optimizar/ACIDO.svg" class="img-fluid product-image" alt="Producto 6">
-                        <div class="product-details">
-                            <h5 class="card-title">Acido</h5>
-                            <a href="#" class="btn btn-primary mt-2">INFO</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="product-card">
-                        <img src="multimedia/optimizar/PRIMA XV.svg" class="img-fluid product-image" alt="Producto 6">
-                        <div class="product-details">
-                            <h5 class="card-title">Prima XV</h5>
-                            <a href="#" class="btn btn-primary mt-2">INFO</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="product-card">
-                        <img src="multimedia/optimizar/WASH.svg" class="img-fluid product-image" alt="Producto 6">
-                        <div class="product-details">
-                            <h5 class="card-title">Wash</h5>
-                            <a href="#" class="btn btn-primary mt-2">INFO</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="product-card">
-                        <img src="multimedia/optimizar/BLOCKADE.svg" class="img-fluid product-image" alt="Producto 6">
-                        <div class="product-details">
-                            <h5 class="card-title">Blockade</h5>
-                            <a href="#" class="btn btn-primary mt-2">INFO</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="product-card">
-                        <img src="multimedia/optimizar/DELLA 5000.svg" class="img-fluid product-image" alt="Producto 6">
-                        <div class="product-details">
-                            <h5 class="card-title">Della 5000</h5>
-                            <a href="#" class="btn btn-primary mt-2">INFO</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="product-card">
-                        <img src="multimedia/optimizar/PRIMA.svg" class="img-fluid product-image" alt="Producto 6">
-                        <div class="product-details">
-                            <h5 class="card-title">Prima</h5>
-                            <a href="#" class="btn btn-primary mt-2">INFO</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="product-card">
-                        <img src="multimedia/optimizar/ACEITE.svg" class="img-fluid product-image" alt="Producto 6">
-                        <div class="product-details">
-                            <h5 class="card-title">Aceite</h5>
-                            <a href="#" class="btn btn-primary mt-2">INFO</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add more product cards here -->
-            </div>
-            <!-- /.row -->
+    <!-- Contenedor del Carrito de Compras -->
+    <div id="cart-container" class="container text-white text-center mt-4 border">
+        <h2 class="pt-3">Contenido</h2>
+        <div id="cart-content">
+            <!-- Aquí se generará dinámicamente el contenido del carrito -->
         </div>
-        <!-- /.container -->
-        <!-- Bootstrap JS and dependencies (Popper.js) -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-            crossorigin="anonymous"></script>
-        <script src="java/java.js"></script>
-    </body>
+        <button id="clear-cart" class="btn btn-danger mt-2" onclick="clearCart()">Borrar Todo</button>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="java/java.js"></script>
+</body>
 </html>
+
+
+

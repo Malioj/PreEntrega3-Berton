@@ -21,10 +21,24 @@ body {
     height: 250px;
     width: 100%;
     object-fit: cover;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border-radius: 5px;
 }
 
-.product-details {
-    padding: 20px;
+#cart-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #23397d;
+    z-index: 1000;
+    display: none;
 }
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
