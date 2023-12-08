@@ -22,7 +22,6 @@ fetch('data/data.json')
 // Función para generar el HTML de los productos
 function generateProductHTML(data) {
     const productContainer = document.getElementById('product-container');
-
     // Iterar a través de las categorías
     data.forEach(category => {
         // Agregar el título de la categoría
