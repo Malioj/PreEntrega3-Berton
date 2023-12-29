@@ -6,21 +6,20 @@ body {
 .product-card {
     border: 1px solid #ddd;
     border-radius: 8px;
-    margin-bottom: 20px;
     transition: transform 0.2s;
+    margin-bottom: 20px;
 }
 
 .product-card:hover {
     transform: scale(1.05);
 }
-.centrado{
-    justify-content: center;
-}
+
 .product-image {
     height: 250px;
     width: 100%;
     object-fit: cover;
-    border-radius: 5px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 #cart-container {
@@ -40,4 +39,5 @@ body {
     align-items: center;
     margin-bottom: 10px;
 }
+
 
